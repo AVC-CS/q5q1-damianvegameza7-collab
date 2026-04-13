@@ -10,7 +10,9 @@ int main()
     // TODO: outer loop for each row
     for(int i = 1; i <= n; i++) {
         for(int j = 0; j < i; j++) {
-            cout << (char) ('A' + j) <<" ";
+            if(j!= 0) 
+            cout << " ";
+            cout << (char) ('A' + j);
         }
         cout << endl;
     }
